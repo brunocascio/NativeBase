@@ -7,6 +7,7 @@ class Content extends Component {
   render() {
     return (
       <KeyboardAwareScrollView
+        keyboardShouldPersistTaps="always"
         automaticallyAdjustContentInsets={false}
         resetScrollToCoords={(this.props.disableKBDismissScroll) ? null : { x: 0, y: 0 }}
         ref={(c) => { this._scrollview = c; this._root = c; }}
